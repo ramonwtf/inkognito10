@@ -1,0 +1,285 @@
+@import 'bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+body.dark {
+  background-color: #606470;
+  transition: all 0.5s ease;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50rem;
+}
+body.ligth {
+  background-color: #FDFAF6;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50rem;
+}
+
+body {
+  background-color: #FDFAF6;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50rem;
+}
+
+.modo-dark {
+  background-color: #606470;
+  transition: all 0.5s ease;
+
+}
+
+#label_toggle {
+  position: absolute;
+    top: 29px;
+    right: 59px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.caarrito-po {
+  position: relative;
+    top: 1rem;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+}
+.titulo-noso span {
+    color: #49a562;
+}
+
+.nosotros-iconos {
+    margin: 3em 0;
+}
+
+.nosotros-iconos i {
+    margin-right: 0.8em;
+    padding: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.nosotros-iconos li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+/* Carrito */
+
+.tarjetas img {
+    width: 80px;
+    margin: 5px 55px;
+}
+
+.posicion-car {
+  position: relative;
+  top: 1rem;
+  color: black;
+}
+.color-carrrito {
+  color: black;
+}
+
+.padding-nb.navbar {
+    border-bottom: 3px solid black ;
+    background-color: #E4EFE7;
+}
+
+.alta-m {
+  margin-left: 10rem;
+}
+
+.fondo.bg-body-tertiary {
+    background-color: #696464;
+}
+
+.margin-le {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.margin-lr.nav-link {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.tamano.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+
+.style-fo {
+    background-color: #E4EFE7;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-fo {
+    background-color: #E4EFE7;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+hr {
+    height: 2px;
+    width: 50%;
+    background-color: #000000;
+    margin: 0;
+    margin-left: 38rem;
+    margin-right: 38rem;
+  }
+
+  .img-logo {
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .precio-.list-group-item {
+    color: #47BF81;
+    font-size: 25px;
+  }
+
+  .back-btn.btn {
+    background-color: #83e79e;
+    border: 2px solid #83e79e;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .color-card.card {
+    border-radius: 20px;
+    border: 1px solid #83e79e;
+  }
+
+  .back-noso.col-7 {
+    background-color: #E4EFE7;
+    border-radius: 25px;
+    
+    
+  }
+
+  .img-noso.img-fluid {
+    border-radius: 20px;
+    border: 5px solid #d0f3d9;
+  }
+
+  .font-p {
+    font-size: 26px;
+  }
+
+  .estilo-bo.nav-link {
+    border-bottom: 3px solid ;
+  }
+
+  .ancho-con.card {
+    width: 70rem;
+    height: auto;
+    margin-top: 10rem;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #E4EFE7;
+    padding-left: 0;
+  }
+
+
+  .bag-card.card-body {
+    background-color: #E4EFE7;
+  }
+
+  .bag-carrito.card-header.card-header {
+    background-color: #FDFAF6;
+  }
+
+  .bag-li.list-group-item {
+    background-color: #E4EFE7;
+  }
+
+  .btn-eliminar.btn {
+    background-color: #ff0000;
+    height: 2rem;
+  }
+
+  .form-style {
+    margin: 15rem 15rem;
+    border: 7px solid;
+    border-radius: 1rem;
+    padding: 40px;
+    box-shadow: -6px 8px 20px 0px;
+}
+  
+
+  .btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .btn-co.btn-primary {
+    background-color: #83e79e;
+    border: 1px solid #83e79e;
+    color: black;
+  }
+
+  .btn-border {
+    border: 0;
+  }
+
+  .btn-submit.btn-co.btn-primary {
+    background-color: #83e79e;
+    border: 1px solid #83e79e;
+    color: black;
+    margin: 20px;
+    padding: 1rem 7rem;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .btn-co.btn-danger {
+    background-color: #83e79e;
+    border: 1px solid #83e79e;
+    color: black;
+  }
+  
+
+  .strong-pago {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .envio {
+    color: #49a562;
+  }
+  .icon-color {
+    color: #49a562;
+  }
+
+  .bag-pagos.tarjetas {
+    background-color: #E4EFE7;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+  }
+

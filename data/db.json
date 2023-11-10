@@ -1,0 +1,91 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Samsung-A13",
+      "color": "Color: BLANCO",
+      "caracteristicas": "FullHD+ de 2.408 x 1.080, 4GB/128GB y 5.000 mAh",
+      "precio": 105,
+      "foto": "samsung-a13.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Samsung-A22",
+      "color": "Color: BLANCO",
+      "caracteristicas": "Super AMOLED de 6.4, 4GB/128GB y 5.000 mAh",
+      "precio": 130,
+      "foto": "samsung-a22.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Samsung-A34",
+      "color": "Color: NEGRO",
+      "caracteristicas": "AMOLED de 6.6, 6GB/128GB y 5.000 mAh",
+      "precio": 170,
+      "foto": "samsung-a34.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Samsung-A54",
+      "color": "Color: MORADO",
+      "caracteristicas": "Super AMOLED de 6.4, 8GB/256GB Y 5000mAh",
+      "precio": 227,
+      "foto": "samsung-a54.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Samsung-A23",
+      "color": "Color: BLANCO",
+      "caracteristicas": "AMOLED de 6.6, 4GB/128GB y 5.000 mAh",
+      "precio": 123,
+      "foto": "samsung-a23.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Samsung-Galaxy S23 Ul",
+      "color": "Color: DORADO",
+      "caracteristicas": "AMOLED 2X de 6.8, 12GB/256GB y 5.000 mAh",
+      "precio": 560,
+      "foto": "samsung-galaxy.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "samsumg",
+      "color": "Color rojo",
+      "caracteristicas": "dhhhsghbcshn",
+      "precio": "2222",
+      "foto": "C:\\fakepath\\samsung-galaxy.jpg"
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "id": 3,
+        "nombre": "Samsung-A34",
+        "color": "Color: NEGRO",
+        "caracteristicas": "AMOLED de 6.6, 6GB/128GB y 5.000 mAh",
+        "precio": 170,
+        "foto": "samsung-a34.jpg",
+        "cantidad": 1
+      },
+      {
+        "id": 2,
+        "nombre": "Samsung-A22",
+        "color": "Color: BLANCO",
+        "caracteristicas": "Super AMOLED de 6.4, 4GB/128GB y 5.000 mAh",
+        "precio": 130,
+        "foto": "samsung-a22.jpg",
+        "cantidad": 1
+      },
+      {
+        "id": 1,
+        "nombre": "Samsung-A13",
+        "color": "Color: BLANCO",
+        "caracteristicas": "FullHD+ de 2.408 x 1.080, 4GB/128GB y 5.000 mAh",
+        "precio": 105,
+        "foto": "samsung-a13.webp",
+        "cantidad": 1
+      }
+    ]
+  ]
+}
