@@ -10,7 +10,7 @@ const Card = ( { producto } ) => {
   }
 
   return (
-    <div className="color-card card col-3 m-3 shadow-sm">
+    <div className="color-card card m-3 shadow-sm" id="width-card">
     <img src={`/img/${producto.foto.split('\\').pop()}`} className="tamano card-img-top img-producto" alt="..."></img>
     <div className="card-body">
       <h5 className="card-title">{producto.nombre}</h5>

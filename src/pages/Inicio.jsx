@@ -15,7 +15,7 @@ const Inicio = () => {
       
 
     <Carrusel/>
-    <section className="row my-5">
+    <section className="row d-flex justify-content-center my-5">
     
         
         {

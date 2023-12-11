@@ -4,23 +4,42 @@ import { Link, NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <div>
-        <footer className="container-fluid">
+      <footer className="container-fluid">
       <div className="style-fo">
-        <img className="img-logo" src="/img/logotipo.png" alt="logotipo"></img>
-        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+        <img className="img-logo img-footer" src="public/img/logotipo.png" alt="logotipo"></img>
+
+      </div>
+
+        <div className="footer-menu">
+          <h4>Menu</h4>
+          <ul>
+            <li className="footer-item">
+              <NavLink href="#" className="menu-link">inicio</NavLink>
+            </li>
+            <li className="footer-item">
+              <NavLink href="#" className="menu-link">nosotros</NavLink>
+            </li>
+            <li className="footer-item">
+              <NavLink href="#" className="menu-link">contacto</NavLink>
+            </li>
+            <li className="footer-item">
+              <NavLink href="#" className="menu-link">alta</NavLink>
+            </li>
+
+          </ul>
         </div>
-        <hr></hr>
-        <div className="iconos-fo">
 
-        <Link className='icon-color' to=""  ><i className="fa-brands fa-facebook fa-beat-fade fa-2xl"></i></Link>
+        <div className="footer-ubi">
+          <h4>Ubicacion</h4>
+          <Link href="#" className="menu-link">11 de septiembre de 1888 </Link>
+        </div>
         
-        <Link className='icon-color' to="" ><i className="fa-brands fa-twitter fa-beat-fade fa-2xl"></i></Link>
-
-        <Link className='icon-color' to=""  ><i className="fa-brands fa-instagram fa-beat-fade fa-2xl"></i></Link>
-
-        <Link className='icon-color' to=""  ><i className="fa-brands fa-github fa-beat-fade fa-2xl"></i></Link>
+        
+        <div className="iconos-fo">
+           <Link href="#" ><i className="icon-color icons fa-brands fa-facebook fa-beat-fade fa-2xl"></i></Link>
+          <Link href="#"><i className="icon-color icons fa-brands fa-twitter fa-beat-fade fa-2xl"></i></Link>
+          <Link href="#" ><i className="icon-color icons fa-brands fa-instagram fa-beat-fade fa-2xl"></i></Link>
+          <Link href="#" ><i className="icon-color icons fa-brands fa-github fa-beat-fade fa-2xl"></i></Link>
         </div>
 
     </footer>

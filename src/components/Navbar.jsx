@@ -30,44 +30,24 @@ const Navbar = () => {
     vaciarCarritoContext()
   }
 
+  const ToogleNavbar = () => {
+      const menuElement = document.getElementById('menu-')
+      menuElement.classList.toggle('menu-show') 
+  }
+
   return (
     
   <header>
-    <nav className="padding-nb navbar navbar-expand-lg ">
-      <Link className="navbar-brand" to="/"><img src="/img/logotipo.png" alt="..."></img></Link>
-
-      <div className="container-fluid d-flex justify-content-between">
-    
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="margin-le collapse navbar-collapse" id="navbarNav"  >
-
-          <ul className="navbar-nav mx-auto">
-            <li className="margin-n nav-item">
-              <NavLink className="estilo-bo nav-link active" aria-current="page" to="/">INICIO</NavLink>
-            </li>
-            <li className="margin-n nav-item">
-              <NavLink className="estilo-bo margin-lr nav-link active" to="/nosotros">NOSOTROS</NavLink>
-            </li>
-            <li className="margin-n nav-item">
-              <NavLink className="estilo-bo nav-link active" to="/contacto">CONTACTO</NavLink>
-            </li>
-            <li className="margin-n nav-item">
-              <NavLink className="alta-m estilo-bo nav-link active" to="/alta">ALTA</NavLink>
-            </li>
-          </ul>
-        </div>
+    <nav className="navbar-nav">
+      <div className="titulo">
+        <a href="/" className="menu-link"><img className="img-logo-" src="/public/img/logotipo.png" alt=""></img></a>
       </div>
-
-        <ModeDark/>
         
-        <div className="d-flex">
-          <div className="dropdown dropstart">
-            <a type="button" className="carrito-po posicion-car" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className=" carrito dropstart">
+            <a type="button" className="carrito-" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="fa-solid fa-cart-shopping fa-2xl"></i>
             </a>
-            <ul  className="dropdown-menu mx-2">
+            <ul id="carrito" className="dropdown-menu mx-2">
               <table id="lista-carrito" className="table">
                 <thead>
                   <tr>
@@ -78,7 +58,7 @@ const Navbar = () => {
                   </tr>
                 </thead>
                 <tbody>
-                      {
+                {
                         carrito && carrito.map(item => (
                           <ItemCarritoInicio key={item.id} item={item} />
                         ))
@@ -86,12 +66,33 @@ const Navbar = () => {
                 </tbody>
               </table>
               <div className="d-grid gap-2  justify-content-md-center ms-1">
-                <button  className="btn btn-co btn-primary" onClick={handleVaciarCarrito}>Vaciar carrito</button>
-                <button  className="btn btn-co btn-danger" onClick={handleComprar} >Procesar compra</button>
+                <button id="vaciar-carrito" className="btn btn-co btn-primary" onClick={handleVaciarCarrito}>Vaciar carrito</button>
+                <button id="procesar-pedido" className="btn btn-co btn-danger" onClick={handleComprar}>Procesar compra</button>
               </div>
             </ul>
           </div>
+      
+
+      <div id="toggle-menu" className="toggle-menu" onClick={ToogleNavbar}>
+        
+        <i className="fa-solid fa-bars fa-xl"></i>
       </div>
+      <ul id="menu-" className="menu">
+        <li className="menu-item2 menu-item">
+          <NavLink to="/" className="menu-link">inicio</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/nosotros" className="menu-link">nosotros</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/contacto" className="menu-link">contacto</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/alta" className=" menu-link">alta</NavLink>
+        </li>
+      </ul>
+
+      
     </nav>
   </header>
     
