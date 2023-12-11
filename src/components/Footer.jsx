@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className="container-fluid">
       <div className="style-fo">
-        <img className="img-logo img-footer" src="public/img/logotipo.png" alt="logotipo"></img>
+        <img className="img-logo img-footer" src="/img/logotipo.png" alt="logotipo"></img>
 
       </div>
 

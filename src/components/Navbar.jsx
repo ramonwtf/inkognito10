@@ -40,7 +40,7 @@ const Navbar = () => {
   <header>
     <nav className="navbar-nav">
       <div className="titulo">
-        <a href="/" className="menu-link"><img className="img-logo-" src="/public/img/logotipo.png" alt=""></img></a>
+        <a href="/" className="menu-link"><img className="img-logo-" src="/img/logotipo.png" alt=""></img></a>
       </div>
         
           <div className=" carrito dropstart">
