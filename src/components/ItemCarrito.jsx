@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useForm } from '../hooks/useForm'
 import CarritoContext from '../contexts/CarritoContext'
+import './ItemCarrito.css'
+import BotonEliminar from './BotonEliminar'
 
 const ItemCarrito = ({ itemProducto }) => {
-  const {cambiarCantidadCarrritoContext, eliminarProductoCarritoContext} = useContext(CarritoContext)
+  const {cambiarCantidadCarrritoContext} = useContext(CarritoContext)
 
   let precioCantidadInicial = itemProducto.precio * itemProducto.cantidad 
 
@@ -34,7 +36,7 @@ const ItemCarrito = ({ itemProducto }) => {
                     <p>{itemProducto.color}</p>
                     <p>{itemProducto.caracteristicas}</p>
 
-                    <button className="btn-border btn-sm me-1 mb-2 fa-solid fa-trash-can text-danger" onClick={() => eliminarProductoCarritoContext(itemProducto.id)}></button>
+                    <BotonEliminar />
                     
                     </div>
                     <div className="col-2">
@@ -48,7 +50,7 @@ const ItemCarrito = ({ itemProducto }) => {
                       onChange={handleChange} />
 
                     <p className="text-center mt-4">
-                        <strong className="precio">${total}</strong>
+                        <strong >${total}</strong>
                     </p>
                 </div>
     </div>

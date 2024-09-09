@@ -1,45 +1,32 @@
-import DarkMode from './DarkMode.css'
+import React, { useState, useEffect } from "react";
+import "./ModeDark.css"
 
 const ModeDark = () => {
- let clichedClass ='cliked'
- const body = document.body
- const lightTheme = 'light'
- const darkTheme = 'dark'
- let theme
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
- if (localStorage) {
-  theme = localStorage.getItem('theme')
-  
- }
- if (theme === lightTheme || theme === darkTheme) {
-  body.classList.add(theme)
- } else {
-  body.classList.add(lightTheme)
- }
+  useEffect(() => {
+    document.body.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
- const switchTheme = (e) => {
-  if (theme === darkTheme) {
-    body.classList.replace(darkTheme, lightTheme)
-    e.target.classList.remove(clichedClass)
-    localStorage.setItem('theme', 'light')
-    theme = lightTheme
-  }else {
-    body.classList.replace(lightTheme,darkTheme)
-    e.target.classList.add(clichedClass)
-    localStorage.setItem('theme', 'dark')
-    theme = darkTheme
-  }
- }
-
+  const switchTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+    localStorage.setItem("theme", theme === "dark" ? "light" : "dark");
+  };
 
   return (
+    
 
-    <div>
-      <button className={theme === 'dark' ? clichedClass : ''} id='darkmode' onClick={(e) => switchTheme(e)}>
-
+      <button
+        className='btn-theme' id="darkmode"
+        onClick={switchTheme}
+      >
+        {theme === "dark" ? "Light" : "Dark"}
       </button>
-    </div>
-  )
-}
+    
+    
+  );
+};
 
-export default ModeDark
+
+
+export default ModeDark;

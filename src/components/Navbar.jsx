@@ -4,6 +4,7 @@ import { useContext } from "react"
 import CarritoContext from "../contexts/CarritoContext"
 import Swal from "sweetalert2"
 import ModeDark from "./ModeDark"
+import './Navbar.css'
 
 
 
@@ -47,6 +48,10 @@ const Navbar = () => {
             <a type="button" className="carrito-" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="fa-solid fa-cart-shopping fa-2xl"></i>
             </a>
+
+            <ModeDark />
+
+
             <ul id="carrito" className="dropdown-menu mx-2">
               <table id="lista-carrito" className="table">
                 <thead>
@@ -69,8 +74,12 @@ const Navbar = () => {
                 <button id="vaciar-carrito" className="btn btn-co btn-primary" onClick={handleVaciarCarrito}>Vaciar carrito</button>
                 <button id="procesar-pedido" className="btn btn-co btn-danger" onClick={handleComprar}>Procesar compra</button>
               </div>
+
             </ul>
+
+
           </div>
+
       
 
       <div id="toggle-menu" className="toggle-menu" onClick={ToogleNavbar}>

@@ -1,0 +1,39 @@
+.color-card.card {
+    border-radius: 20px;
+    border: 1px solid #83e79e;
+  }
+
+  .tamano.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+
+
+
+  .bag-card.card-body {
+    background-color: #82CD47;
+  }
+
+  .bag-carrito.card-header.card-header {
+    background-color: #FDFAF6;
+  }
+
+  .card-prueba {
+    overflow: hidden;
+  }
+
+  #width-card {
+    width: 18rem;
+  }
+
+  .precio-.list-group-item {
+    color: #47BF81;
+    font-size: 25px;
+  }
+
+  .back-btn.btn {
+    background-color: #83e79e;
+    border: 2px solid #83e79e;
+    font-family: 'Roboto', sans-serif;
+  }

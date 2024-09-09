@@ -1,3 +1,27 @@
-.tarjetas img {
-    width: 65px;
+.strong-pago {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .bag-li.list-group-item {
+    background-color: #82CD47;
+  }
+
+  .back-btn.btn {
+    background-color: #83e79e;
+    border: 2px solid #83e79e;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .bag-pagos.tarjetas {
+    background-color: #82CD47;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+  }
+
+  .tarjetas img {
+    width: 80px;
+    margin: 5px 55px;
 }

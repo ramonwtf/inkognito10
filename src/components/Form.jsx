@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { useState } from 'react'
 import ProductosContext from '../contexts/ProductosContext'
+import './Form.css'
 
 const formInicial = {
   id: null,

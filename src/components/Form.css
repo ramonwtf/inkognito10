@@ -1,0 +1,45 @@
+.form-style {
+    margin: 15rem 15rem;
+    border: 7px solid #82CD47;
+    border-radius: 1rem;
+    padding: 40px;
+    box-shadow: -6px 8px 20px 0px;
+}
+
+.btn-submit.btn-co.btn-primary {
+    background-color: #82CD47;
+    border: 1px solid #82CD47;
+    color: black;
+    margin: 20px;
+    padding: 1rem 7rem;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 991px ){
+    .btn-submit.btn-co.btn-primary {
+      padding: 0.5rem 0.5rem;
+      margin: 20px;
+
+  
+    }
+
+    .form-style {
+        margin: 15rem 0rem;
+        border: 7px solid #82CD47;
+        border-radius: 1rem;
+        padding: 0px;
+        box-shadow: -6px 8px 20px 0px;
+    }
+  }
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-co.btn-primary {
+    background-color: #83e79e;
+    border: 1px solid #83e79e;
+    color: black;
+  }

@@ -1,0 +1,11 @@
+#darkmode {
+    background: none;
+    border: none;
+}
+
+#darkMode:hover, #darkmode:focus {
+    filter: none;
+    cursor: pointer;
+}
+
+

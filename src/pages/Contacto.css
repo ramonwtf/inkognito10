@@ -1,0 +1,34 @@
+.contacto-iconos {
+    margin: 3em 0;
+}
+.ancho-con.card {
+    width: 51rem;
+    height: auto;
+    margin-top: 10rem;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #82CD47;
+    padding-left: 0;
+  }
+
+.contacto-iconos li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.style-width {
+    width: 23rem;
+}
+
+.main-style.container {
+    display: flex;
+    justify-content: center;
+}

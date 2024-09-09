@@ -61,7 +61,20 @@ const ProductosProvider = ( { children } ) => {
 
     // ! DELETE => ELIMINAR PRODUCTOS
     const eliminarProductoContext = async (id) => {
-    
+
+        try {
+            const config = {
+                method: 'DELETE'
+            }
+            const respuesta = await fetch(`${url}/${id}`, config)
+            if (!respuesta.ok) {
+                throw new Error(`[eliminarProductoContext] Error... ${respuesta.status}`) // Lanza el error
+            }
+            const nuevoArray = productos.filter(producto => producto.id !== id)
+            setProductos(nuevoArray)
+        } catch (error) {
+            console.error('Algo paso con la petición en el [eliminarProductoContext]', error)
+        }
 
      }
 

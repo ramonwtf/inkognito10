@@ -1,20 +1,23 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import CarritoContext from '../contexts/CarritoContext'
 import ItemCarrito from '../components/ItemCarrito'
 import ModeDark from '../components/ModeDark'
+import './Carrito.css'
 
 const Carrito = () => {
   const { carrito, cantidadArticulosCarritoContext, totalFinal, guardarCarritoContext, ivaTotal, totalSinIva } = useContext(CarritoContext)
 
-  
+  useEffect(() => {
+    document.title = 'Tienda EIT - Carrito'
+  }, [])
 
   return (
 
     <section className="container my-5">
         <div className="row d-flex justify-content-center">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="card mb-4">
-              <div className="bag-carrito card-header py-4">
+              <div className=" card-header py-4">
                 <h5 className="mb-0"> <strong className='strong-pago'> Carrito - {cantidadArticulosCarritoContext()} articulos</strong></h5>
               </div>
 
@@ -32,7 +35,7 @@ const Carrito = () => {
 
           <div className="col-12">
             <div className="card mb-4">
-              <div className="bag-carrito card-header py-3">
+              <div className=" card-header py-3">
                 <h5 className=" mb-0"> <strong className='strong-pago'>Resumen carrito</strong></h5>
               </div>
               <div className="bag-card card-body">
@@ -72,7 +75,7 @@ const Carrito = () => {
   
             </div>
             <div className="card mb-4">
-              <div className='bag-carrito card-header py-3'>
+              <div className=' card-header py-3'>
               <h5><strong className="strong-pago">Métodos de pago aceptados</strong></h5>
               </div>
               <div className="bag-pagos tarjetas">
