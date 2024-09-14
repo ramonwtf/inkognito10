@@ -39,7 +39,7 @@ const ItemCarrito = ({ itemProducto }) => {
                     <BotonEliminar />
                     
                     </div>
-                    <div className="col-2">
+                    <div className="col-md-2 mt-2">
                     <input
                       type="number"
                       min="1"

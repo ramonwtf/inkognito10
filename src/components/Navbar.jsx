@@ -52,7 +52,7 @@ const Navbar = () => {
             <ModeDark />
 
 
-            <ul id="carrito" className="dropdown-menu mx-2">
+            <ul id="carrito" className=" position-item dropdown-menu mx-2">
               <table id="lista-carrito" className="table">
                 <thead>
                   <tr>

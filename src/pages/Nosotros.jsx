@@ -49,7 +49,7 @@ const Nosotros = () => {
 
       <div className="col-md-5">
         <div className="">
-          <img className="img-noso img-fluid m-5 shadow-lg" src="/img/garantia.webp" alt="garantia"></img>
+          <img className="img-noso img-fluid mt-5 shadow-lg" src="/img/garantia.webp" alt="garantia"></img>
         </div>
       </div> 
       

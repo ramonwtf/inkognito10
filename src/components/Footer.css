@@ -63,6 +63,8 @@ footer {
     }
     
   }
+
+
   
   @media screen and (min-width: 867px ){
     .img-footer {
@@ -72,9 +74,17 @@ footer {
     
   }
 
+  @media screen and (max-width: 500px ){
+    .img-footer {
+        width: 150px;
+        height: auto;
+    }
+    
+  }
+
   .img-logo {
     position: relative;
-    left: 2rem;
+    left: 0rem;
     bottom: 2rem;
   }
 
