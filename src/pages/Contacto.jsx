@@ -61,8 +61,7 @@ const Contacto = () => {
       </div>
       
     </main>
-
-    <FormContacto />
+    <FormContacto/> 
     </>
 
   
